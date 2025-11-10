@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Мой Сайт</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo"></div>
+                    <h1 class="header__title">Ким Олег Николаевич</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="container">
+                <section class="contacts-container">
+                    <h1 class="section-title">Контакты</h1>
+                    
+                    <div class="contacts-content">
+                        <div class="contact-form-section">
+                            <h2 class="contacts__subtitle">Свяжитесь со мной</h2>
+                            <form class="contact-form">
+                                <div class="form-group contact-form__group">
+                                    <label for="name" class="contact-form__label">Имя:</label>
+                                    <input type="text" id="name" class="contact-form__input" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="form-group contact-form__group">
+                                    <label for="email" class="contact-form__label">Email:</label>
+                                    <input type="email" id="email" class="contact-form__input" placeholder="Введите ваш email">
+                                </div>
+                                <div class="form-group contact-form__group">
+                                    <label for="message" class="contact-form__label">Сообщение:</label>
+                                    <textarea id="message" class="contact-form__textarea" placeholder="Введите ваше сообщение" rows="5"></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn contact-form__submit">
+                                    Отправить сообщение
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="contact-info-section">
+                            <div class="contact-info">
+                                <h3 class="contact-info__title">Контакты:</h3>
+                                <div class="contact-details">
+                                    <div class="contact-item contact-info__item">
+                                        <strong class="contact-info__label">Email:</strong>
+                                        <span class="contact-info__value">student@edu.ru</span>
+                                    </div>
+                                    <div class="contact-item contact-info__item">
+                                        <strong class="contact-info__label">GitHub:</strong>
+                                        <span class="contact-info__value">username</span>
+                                    </div>
+                                    <div class="contact-item contact-info__item">
+                                        <strong class="contact-info__label">Адрес:</strong>
+                                        <span class="contact-info__value">Город, Страна</span>
+                                    </div>
+                                    <div class="contact-item contact-info__item">
+                                        <strong class="contact-info__label">Группа:</strong>
+                                        <span class="contact-info__value">ЭФБО-18-24</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+                        <a href="https://github.com" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

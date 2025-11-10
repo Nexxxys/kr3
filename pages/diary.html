@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник - Мой Сайт</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo"></div>
+                    <h1 class="header__title">Ким Олег Николаевич</h1>
+                    <p class="header__subtitle">Студент-разработчик</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">Проекты</a>
+                    </li>
+                    <li class="nav__item nav__item--active">
+                        <a href="diary.html" class="nav__link">Дневник</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="container">
+                <section class="diary-container">
+                    <h1 class="section-title">Мой учебный прогресс</h1>
+                    
+                    <div class="diary-content">
+                        <div class="progress-section">
+                            <h2 class="diary__subtitle">Хронология прогресса</h2>
+                            <div class="progress-timeline">
+                                <div class="timeline-item completed">
+                                    <div class="timeline-date">15 декабря</div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-title">Верстка макета сайта</span>
+                                        <p class="timeline-description">Завершена работа над адаптивной версткой главной страницы портфолио</p>
+                                        <span class="timeline-status">✓ Завершено</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item completed">
+                                    <div class="timeline-date">10 декабря</div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-title">JavaScript основы</span>
+                                        <p class="timeline-description">Изучены базовые концепции JavaScript: переменные, функции, DOM-манипуляции</p>
+                                        <span class="timeline-status">✓ Завершено</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item in-progress">
+                                    <div class="timeline-date">5 декабря</div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-title">Работа с формами</span>
+                                        <p class="timeline-description">В процессе изучения валидации форм и обработки пользовательского ввода</p>
+                                        <span class="timeline-status">🔄 В процессе</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item planned">
+                                    <div class="timeline-date">1 декабря</div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-title">Адаптивный дизайн</span>
+                                        <p class="timeline-description">Планируется углубленное изучение медиа-запросов и mobile-first подхода</p>
+                                        <span class="timeline-status">📅 Запланировано</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses-section">
+                            <div class="courses">
+                                <h2 class="courses__title">Текущие курсы</h2>
+                                <div class="courses-list">
+                                    <div class="course-item">
+                                        <div class="course-header">
+                                            <span class="course-name">Веб-разработка</span>
+                                            <span class="course-percent">98%</span>
+                                        </div>
+                                        <div class="course-progress">
+                                            <div class="course-bar">
+                                                <div class="course-progress-fill high" style="width: 98%"></div>
+                                            </div>
+                                        </div>
+                                        <p class="course-description">HTML, CSS, основы верстки</p>
+                                    </div>
+                                    
+                                    <div class="course-item">
+                                        <div class="course-header">
+                                            <span class="course-name">JavaScript</span>
+                                            <span class="course-percent">70%</span>
+                                        </div>
+                                        <div class="course-progress">
+                                            <div class="course-bar">
+                                                <div class="course-progress-fill medium" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                        <p class="course-description">Базовый синтаксис и DOM API</p>
+                                    </div>
+                                    
+                                    <div class="course-item">
+                                        <div class="course-header">
+                                            <span class="course-name">React</span>
+                                            <span class="course-percent">50%</span>
+                                        </div>
+                                        <div class="course-progress">
+                                            <div class="course-bar">
+                                                <div class="course-progress-fill low" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                        <p class="course-description">Компоненты и состояние</p>
+                                    </div>
+                                </div>
+                                
+                                <button class="add-entry-btn courses__add-button">
+                                    Добавить запись
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__copyright">&copy; 2025</p>
+                    <div class="footer__links">
+                        <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+                        <a href="https://github.com" class="footer__link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
