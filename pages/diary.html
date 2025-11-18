@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дневник - Мой Сайт</title>
+    <title>Учебный дневник - Ким Олег</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <div class="page">
+        <!-- Header с улучшенной структурой -->
         <header class="header">
             <div class="container">
                 <div class="header-content">
-                    <div class="logo"></div>
-                    <h1 class="header__title">Ким Олег Николаевич</h1>
-                    <p class="header__subtitle">Студент-разработчик</p>
+                    <div class="logo" aria-label="Логотип"></div>
+                    <div class="header-text">
+                        <h1 class="header__title">Ким Олег Николаевич</h1>
+                        <p class="header__subtitle">Студент-разработчик</p>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <nav class="nav">
+        <!-- Навигация с доступностью -->
+        <nav class="nav" aria-label="Основная навигация">
             <div class="container">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -28,7 +32,7 @@
                         <a href="projects.html" class="nav__link">Проекты</a>
                     </li>
                     <li class="nav__item nav__item--active">
-                        <a href="diary.html" class="nav__link">Дневник</a>
+                        <a href="diary.html" class="nav__link" aria-current="page">Дневник</a>
                     </li>
                     <li class="nav__item">
                         <a href="contacts.html" class="nav__link">Контакты</a>
@@ -39,97 +43,177 @@
 
         <main class="main">
             <div class="container">
-                <section class="diary-container">
-                    <h1 class="section-title">Мой учебный прогресс</h1>
+                <!-- Основная секция дневника -->
+                <section class="diary-container" aria-labelledby="diary-title">
+                    <h1 id="diary-title" class="section-title">Мой учебный прогресс</h1>
                     
                     <div class="diary-content">
+                        <!-- Секция таймлайна прогресса -->
                         <div class="progress-section">
                             <h2 class="diary__subtitle">Хронология прогресса</h2>
-                            <div class="progress-timeline">
-                                <div class="timeline-item completed">
+                            <div class="progress-timeline" role="list" aria-label="Хронология учебного прогресса">
+                                <article class="timeline-item completed" role="listitem">
+                                    <div class="timeline-marker" aria-hidden="true">
+                                        <div class="timeline-dot completed"></div>
+                                        <div class="timeline-line"></div>
+                                    </div>
                                     <div class="timeline-date">15 декабря</div>
                                     <div class="timeline-content">
-                                        <span class="timeline-title">Верстка макета сайта</span>
+                                        <h3 class="timeline-title">Верстка макета сайта</h3>
                                         <p class="timeline-description">Завершена работа над адаптивной версткой главной страницы портфолио</p>
-                                        <span class="timeline-status">✓ Завершено</span>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-status" aria-label="Статус: Завершено">✓ Завершено</span>
+                                            <span class="timeline-duration">3 дня</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </article>
                                 
-                                <div class="timeline-item completed">
+                                <article class="timeline-item completed" role="listitem">
+                                    <div class="timeline-marker" aria-hidden="true">
+                                        <div class="timeline-dot completed"></div>
+                                        <div class="timeline-line"></div>
+                                    </div>
                                     <div class="timeline-date">10 декабря</div>
                                     <div class="timeline-content">
-                                        <span class="timeline-title">JavaScript основы</span>
+                                        <h3 class="timeline-title">JavaScript основы</h3>
                                         <p class="timeline-description">Изучены базовые концепции JavaScript: переменные, функции, DOM-манипуляции</p>
-                                        <span class="timeline-status">✓ Завершено</span>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-status" aria-label="Статус: Завершено">✓ Завершено</span>
+                                            <span class="timeline-duration">5 дней</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </article>
                                 
-                                <div class="timeline-item in-progress">
+                                <article class="timeline-item in-progress" role="listitem">
+                                    <div class="timeline-marker" aria-hidden="true">
+                                        <div class="timeline-dot in-progress"></div>
+                                        <div class="timeline-line"></div>
+                                    </div>
                                     <div class="timeline-date">5 декабря</div>
                                     <div class="timeline-content">
-                                        <span class="timeline-title">Работа с формами</span>
+                                        <h3 class="timeline-title">Работа с формами</h3>
                                         <p class="timeline-description">В процессе изучения валидации форм и обработки пользовательского ввода</p>
-                                        <span class="timeline-status">🔄 В процессе</span>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-status" aria-label="Статус: В процессе">🔄 В процессе</span>
+                                            <span class="timeline-duration">2 дня</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </article>
                                 
-                                <div class="timeline-item planned">
+                                <article class="timeline-item planned" role="listitem">
+                                    <div class="timeline-marker" aria-hidden="true">
+                                        <div class="timeline-dot planned"></div>
+                                        <div class="timeline-line"></div>
+                                    </div>
                                     <div class="timeline-date">1 декабря</div>
                                     <div class="timeline-content">
-                                        <span class="timeline-title">Адаптивный дизайн</span>
+                                        <h3 class="timeline-title">Адаптивный дизайн</h3>
                                         <p class="timeline-description">Планируется углубленное изучение медиа-запросов и mobile-first подхода</p>
-                                        <span class="timeline-status">📅 Запланировано</span>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-status" aria-label="Статус: Запланировано">📅 Запланировано</span>
+                                            <span class="timeline-duration">7 дней</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </article>
+
+                                <article class="timeline-item upcoming" role="listitem">
+                                    <div class="timeline-marker" aria-hidden="true">
+                                        <div class="timeline-dot upcoming"></div>
+                                    </div>
+                                    <div class="timeline-date">20 декабря</div>
+                                    <div class="timeline-content">
+                                        <h3 class="timeline-title">React продвинутый</h3>
+                                        <p class="timeline-description">Изучение хуков, контекста и управления состоянием в React приложениях</p>
+                                        <div class="timeline-meta">
+                                            <span class="timeline-status" aria-label="Статус: Предстоящий">⏳ Предстоящий</span>
+                                            <span class="timeline-duration">10 дней</span>
+                                        </div>
+                                    </div>
+                                </article>
                             </div>
                         </div>
 
+                        <!-- Секция курсов -->
                         <div class="courses-section">
                             <div class="courses">
                                 <h2 class="courses__title">Текущие курсы</h2>
-                                <div class="courses-list">
-                                    <div class="course-item">
+                                <div class="courses-list" role="list" aria-label="Список текущих курсов">
+                                    <article class="course-item" role="listitem">
                                         <div class="course-header">
-                                            <span class="course-name">Веб-разработка</span>
-                                            <span class="course-percent">98%</span>
+                                            <h3 class="course-name">Веб-разработка</h3>
+                                            <span class="course-percent" aria-hidden="true">98%</span>
                                         </div>
                                         <div class="course-progress">
-                                            <div class="course-bar">
+                                            <div class="course-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="course-progress-fill high" style="width: 98%"></div>
                                             </div>
+                                            <span class="visually-hidden">Прогресс: 98% завершено</span>
                                         </div>
                                         <p class="course-description">HTML, CSS, основы верстки</p>
-                                    </div>
+                                        <div class="course-tags">
+                                            <span class="course-tag">HTML5</span>
+                                            <span class="course-tag">CSS3</span>
+                                            <span class="course-tag">Адаптивность</span>
+                                        </div>
+                                    </article>
                                     
-                                    <div class="course-item">
+                                    <article class="course-item" role="listitem">
                                         <div class="course-header">
-                                            <span class="course-name">JavaScript</span>
-                                            <span class="course-percent">70%</span>
+                                            <h3 class="course-name">JavaScript</h3>
+                                            <span class="course-percent" aria-hidden="true">70%</span>
                                         </div>
                                         <div class="course-progress">
-                                            <div class="course-bar">
+                                            <div class="course-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="course-progress-fill medium" style="width: 70%"></div>
                                             </div>
+                                            <span class="visually-hidden">Прогресс: 70% завершено</span>
                                         </div>
                                         <p class="course-description">Базовый синтаксис и DOM API</p>
-                                    </div>
+                                        <div class="course-tags">
+                                            <span class="course-tag">ES6+</span>
+                                            <span class="course-tag">DOM</span>
+                                            <span class="course-tag">Events</span>
+                                        </div>
+                                    </article>
                                     
-                                    <div class="course-item">
+                                    <article class="course-item" role="listitem">
                                         <div class="course-header">
-                                            <span class="course-name">React</span>
-                                            <span class="course-percent">50%</span>
+                                            <h3 class="course-name">React</h3>
+                                            <span class="course-percent" aria-hidden="true">50%</span>
                                         </div>
                                         <div class="course-progress">
-                                            <div class="course-bar">
+                                            <div class="course-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                                 <div class="course-progress-fill low" style="width: 50%"></div>
                                             </div>
+                                            <span class="visually-hidden">Прогресс: 50% завершено</span>
                                         </div>
                                         <p class="course-description">Компоненты и состояние</p>
+                                        <div class="course-tags">
+                                            <span class="course-tag">Components</span>
+                                            <span class="course-tag">Hooks</span>
+                                            <span class="course-tag">JSX</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                                <!-- Статистика прогресса -->
+                                <div class="progress-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-value">85%</span>
+                                        <span class="stat-label">Общий прогресс</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">3</span>
+                                        <span class="stat-label">Активных курса</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-value">12</span>
+                                        <span class="stat-label">Завершенных тем</span>
                                     </div>
                                 </div>
                                 
-                                <button class="add-entry-btn courses__add-button">
-                                    Добавить запись
+                                <button class="add-entry-btn courses__add-button" aria-label="Добавить новую запись в дневник">
+                                    + Добавить запись
                                 </button>
                             </div>
                         </div>
@@ -138,13 +222,17 @@
             </div>
         </main>
 
-        <footer class="footer">
+        <footer class="footer" role="contentinfo">
             <div class="container">
                 <div class="footer__content">
-                    <p class="footer__copyright">&copy; 2025</p>
+                    <p class="footer__copyright">&copy; 2025 Ким Олег</p>
                     <div class="footer__links">
-                        <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
-                        <a href="https://github.com" class="footer__link">GitHub</a>
+                        <a href="mailto:student@edu.ru" class="footer__link" aria-label="Написать письмо">
+                            student@edu.ru
+                        </a>
+                        <a href="https://github.com" class="footer__link" aria-label="GitHub профиль">
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>

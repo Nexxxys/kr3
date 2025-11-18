@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проекты - Мой Сайт</title>
+    <title>Проекты - Ким Олег</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
@@ -11,21 +11,23 @@
         <header class="header">
             <div class="container">
                 <div class="header-content">
-                    <div class="logo"></div>
-                    <h1 class="header__title">Ким Олег Николаевич</h1>
-                    <p class="header__subtitle">Студент-разработчик</p>
+                    <div class="logo" aria-label="Логотип">OK</div>
+                    <div class="header-text">
+                        <h1 class="header__title">Ким Олег Николаевич</h1>
+                        <p class="header__subtitle">Студент-разработчик</p>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <nav class="nav">
+        <nav class="nav" aria-label="Основная навигация">
             <div class="container">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="../index.html" class="nav__link">Главная</a>
                     </li>
                     <li class="nav__item nav__item--active">
-                        <a href="projects.html" class="nav__link">Проекты</a>
+                        <a href="projects.html" class="nav__link" aria-current="page">Проекты</a>
                     </li>
                     <li class="nav__item">
                         <a href="diary.html" class="nav__link">Дневник</a>
@@ -41,51 +43,62 @@
             <div class="container">
                 <section class="projects-header">
                     <h1 class="section-title">Мои проекты</h1>
+                    <p class="projects-subtitle">Здесь собраны мои лучшие работы и учебные проекты</p>
+                    
                     <div class="projects-filter">
                         <button class="filter-btn active">Все</button>
-                        <button class="filter-btn">HTML</button>
-                        <button class="filter-btn">JS</button>
+                        <button class="filter-btn">HTML/CSS</button>
+                        <button class="filter-btn">JavaScript</button>
                         <button class="filter-btn">React</button>
+                        <button class="filter-btn">Bootstrap</button>
                     </div>
                 </section>
 
                 <section class="projects-grid-page">
                     <div class="project-card-large">
-                        <div class="project-image">[Изображение]</div>
+                        <div class="project-image">
+                            <img src="../images/project1.jpg" alt="Скриншот личного сайта" class="project-screenshot">
+                        </div>
                         <div class="project-info">
-                            <h3 class="project-card__title">Личный сайт</h3>
-                            <p class="project-tech">HTML, CSS</p>
-                            <p class="project-description">Разработка персонального сайта-портфолио с адаптивным дизайном</p>
+                            <h3 class="project-card__title">Личный сайт-портфолио</h3>
+                            <p class="project-tech">HTML, CSS, JavaScript</p>
+                            <p class="project-description">Разработка персонального сайта-портфолио с адаптивным дизайном, семантической версткой и современными CSS-технологиями.</p>
                             <button class="project-btn">Подробнее</button>
                         </div>
                     </div>
 
                     <div class="project-card-large">
-                        <div class="project-image">[Изображение]</div>
+                        <div class="project-image">
+                            <img src="../images/project2.jpg" alt="Скриншот Todo приложения" class="project-screenshot">
+                        </div>
                         <div class="project-info">
                             <h3 class="project-card__title">Todo-приложение</h3>
-                            <p class="project-tech">JavaScript</p>
-                            <p class="project-description">Приложение для управления задачами с локальным хранилищем</p>
+                            <p class="project-tech">JavaScript, LocalStorage</p>
+                            <p class="project-description">Приложение для управления задачами с локальным хранилищем, возможностью добавления, редактирования, удаления и фильтрации задач.</p>
                             <button class="project-btn">Подробнее</button>
                         </div>
                     </div>
 
                     <div class="project-card-large">
-                        <div class="project-image">[Изображение]</div>
+                        <div class="project-image">
+                            <img src="../images/project3.jpg" alt="Скриншот интернет-магазина" class="project-screenshot">
+                        </div>
                         <div class="project-info">
                             <h3 class="project-card__title">Интернет-магазин</h3>
-                            <p class="project-tech">React</p>
-                            <p class="project-description">Полнофункциональный интернет-магазин с корзиной покупок</p>
+                            <p class="project-tech">React, API</p>
+                            <p class="project-description">Полнофункциональный интернет-магазин с корзиной покупок, системой фильтрации товаров и интеграцией с внешним API.</p>
                             <button class="project-btn">Подробнее</button>
                         </div>
                     </div>
 
                     <div class="project-card-large">
-                        <div class="project-image">[Изображение]</div>
+                        <div class="project-image">
+                            <img src="../images/project4.jpg" alt="Скриншот Bootstrap портфолио" class="project-screenshot">
+                        </div>
                         <div class="project-info">
-                            <h3 class="project-card__title">Портфолио</h3>
-                            <p class="project-tech">Bootstrap</p>
-                            <p class="project-description">Адаптивное портфолио на фреймворке Bootstrap 5</p>
+                            <h3 class="project-card__title">Bootstrap портфолио</h3>
+                            <p class="project-tech">Bootstrap 5, SCSS</p>
+                            <p class="project-description">Адаптивное портфолио на фреймворке Bootstrap 5 с кастомными стилями, модальными окнами и интерактивными компонентами.</p>
                             <button class="project-btn">Подробнее</button>
                         </div>
                     </div>
@@ -96,7 +109,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__content">
-                    <p class="footer__copyright">&copy; 2025</p>
+                    <p class="footer__copyright">&copy; 2025 Ким Олег</p>
                     <div class="footer__links">
                         <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
                         <a href="https://github.com" class="footer__link">GitHub</a>
