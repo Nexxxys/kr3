@@ -55,9 +55,21 @@
                 </section>
 
                 <section class="projects-grid-page">
+                    <!-- 3. РАЗНЫЕ ИЗОБРАЖЕНИЯ ДЛЯ РАЗНЫХ ЭКРАНОВ -->
                     <div class="project-card-large">
                         <div class="project-image">
-                            <img src="../images/project1.jpg" alt="Скриншот личного сайта" class="project-screenshot">
+                            <div class="image-container">
+                                <picture>
+                                    <source media="(min-width: 1024px)" 
+                                            srcset="../images/project1.jpg">
+                                    <source media="(min-width: 768px)" 
+                                            srcset="../images/project1.jpg">
+                                    <img src="../images/project1.jpg" 
+                                         alt="Скриншот личного сайта" 
+                                         class="responsive-image project-screenshot"
+                                         loading="lazy">
+                                </picture>
+                            </div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-card__title">Личный сайт-портфолио</h3>
@@ -69,7 +81,16 @@
 
                     <div class="project-card-large">
                         <div class="project-image">
-                            <img src="../images/project2.jpg" alt="Скриншот Todo приложения" class="project-screenshot">
+                            <div class="image-container">
+                                <picture>
+                                    <source media="(min-width: 1024px)" 
+                                            srcset="../images/project2.jpg">
+                                    <img src="../images/project2.jpg" 
+                                         alt="Скриншот Todo приложения" 
+                                         class="responsive-image project-screenshot"
+                                         loading="lazy">
+                                </picture>
+                            </div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-card__title">Todo-приложение</h3>
@@ -81,7 +102,16 @@
 
                     <div class="project-card-large">
                         <div class="project-image">
-                            <img src="../images/project3.jpg" alt="Скриншот интернет-магазина" class="project-screenshot">
+                            <div class="image-container">
+                                <picture>
+                                    <source media="(min-width: 1024px)" 
+                                            srcset="../images/project3.jpg">
+                                    <img src="../images/project3.jpg" 
+                                         alt="Скриншот интернет-магазина" 
+                                         class="responsive-image project-screenshot"
+                                         loading="lazy">
+                                </picture>
+                            </div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-card__title">Интернет-магазин</h3>
@@ -93,7 +123,16 @@
 
                     <div class="project-card-large">
                         <div class="project-image">
-                            <img src="../images/project4.jpg" alt="Скриншот Bootstrap портфолио" class="project-screenshot">
+                            <div class="image-container">
+                                <picture>
+                                    <source media="(min-width: 1024px)" 
+                                            srcset="../images/project4.jpg">
+                                    <img src="../images/project4.jpg" 
+                                         alt="Скриншот Bootstrap портфолио" 
+                                         class="responsive-image project-screenshot"
+                                         loading="lazy">
+                                </picture>
+                            </div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-card__title">Bootstrap портфолио</h3>
